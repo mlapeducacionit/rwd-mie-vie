@@ -7,7 +7,74 @@
     <title>Responsive Web Design</title>
   </head>
   <body>
-    <h1>Responsive Web Design</h1>
+    <!-- Navegación -->
+
+    <!-- nav>a.logo+button.btn+ul.menu>(li>a*3) -->
+
+    <nav>
+      <a href="#" class="logo">Responsive</a>
+      <button class="btn">&equiv;</button>
+      <ul class="menu">
+        <li><a href="">link 1</a></li>
+        <li><a href="">link 2</a></li>
+        <li><a href="">link 3</a></li>
+      </ul>
+    </nav>
+
+    <!-- Cabecera -->
+
+    <!-- header#header>h1{Responsive}+p{Web Design} -->
+    
+    <header id="header">
+      <h1>Responsive</h1>
+      <p>Web Design</p>
+    </header>
+
+    <!-- Contenido -->
+
+    <!-- main>section>header.header>h2+p^p+ul>li*3 -->
+    <main>
+      <section>
+        <header class="header">
+          <h2>Tipos de Diseño</h2>
+          <p>Maquetación de un sitio</p>
+        </header>
+        <p>Desde que existen las páginas web y con la aparición de CSS en el año 90 surgieron diferentes formas de estilizarlas, utilizando medidas absolutas, relativas e incluso flexibles y de todos los métodos implementados podemos destacar principalmente 3, que no necesariamente se aplican de manera individual:</p>
+        <ul>
+          <li>
+            <strong>Fluid Web Design</strong>
+            Estilo que porcentajes para mantener las proporciones de los elementos de la página con respecto a sus diseño. Debido a que solo utilizan porcentajes, estos diseño no suelen ser escalables en pantallas pequeñas y grandes.
+            
+            Una solución a este problema surge con el <em>Liquid Web Design</em> que cosiste en la implementación de máximos y mínimos pero en pantallas grandes se generan espacios no contemplados
+          </li>
+          <li>
+            <strong>Adative Web Design</strong>
+            Estilo que consiste en crear una página para cada dispontivo objetivo, genertalmente smarphone, table, desktop, es bastante practico cuando contemplamos disponistivos de bajos recursos, como poca capacidad de procesamiento o ancho de banda limitado, pero impllica tener cotenido duplicado.
+
+            Es fácil de mantener ya que maneja archivos por separado y es una solución practica par aclientes con bajo presupuesto, además suelen implementarse diferentes estilos según el tamaño de la pantalla, empezando generamente desde la vista de escritorio y reduciendo los contenidos para los otras vistas.
+          </li>
+          <li>
+            <strong>Responsive Web Design</strong>
+            Estilo sugerido originalmente por <em>Ethan Marcotte</em> en una publicación del sitio <a href="https://alistapart.com/article/responsive-web-design" target="_blank">A list apart</a> donde aplica un concepto como <em>One Web for All</em> donde habla del uso de media-queries sistemas de grillas con porcentajes y multimedial flexible entre otros conceptos.
+
+            Se aconsjea implementar una caracteristica conocida como <em>Content-first</em> evolución del <em>Mobile-first</em>, que consiste en planificar el diseño desde la vista móvil utilizando los contenidos finales para tener una clara noción de como se vera la página en el navegador, para luego ir cambiando el diseño según las dimensiones de la pantalla donde se reproduzca.
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer id="footer">
+      <div class="social">
+        <a href="https://facebook.com" target="_blank">facebook</a>
+        <a href="https://instagram.com" target="_blank">instagram</a>
+        <a href="https://linkedin.com" target="_blank">linkedin</a>
+        <a href="https://github.com" target="_blank">github</a>
+      </div>
+      <p class="copy">&copy; 2023 Todos los derechos reservados</p>
+    </footer>
+
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>
