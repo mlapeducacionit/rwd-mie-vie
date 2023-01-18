@@ -1,0 +1,43 @@
+/* Content First - Mobile First */
+    /* General Rules */
+    * {
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+    body {
+        margin: 0;
+    }
+    /* Navitation */
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: .5rem;
+        background: #c63;  
+    }
+
+    nav a {
+        color: #eee;
+        text-decoration: none;
+        text-shadow: 0 0 .5rem #333;
+    }
+
+    .menu {
+        width: 100%;
+        padding: 0;
+        list-style: none;
+    }
+
+
+/* Small devices - Smartphones */
+
+
+/* Medium devices - Tablets */
+
+/* Large Devices -  Laptops */
+
+/* XL Devices -  Desktop */
+
+/* XXL Devices - HD-4k TV */
