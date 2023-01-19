@@ -2,10 +2,21 @@
     /* General Rules */
     * {
         box-sizing: border-box;
-        font-family: sans-serif;
+        font-family: 'Open Sans', sans-serif;
     }
-    body {
+    /* Margins */ 
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    header p,
+    .menu {
         margin: 0;
+    }
+    /* Paddings */
+    .menu {
+        padding: 0;
     }
     /* Navitation */
 
@@ -19,25 +30,58 @@
     }
 
     nav a {
+        display: block;
         color: #eee;
         text-decoration: none;
         text-shadow: 0 0 .5rem #333;
     }
 
+    nav .btn {
+        font-size: 20px;
+        color: #eee;
+    }
+
+    nav button:hover {
+        box-shadow: 0 0 .5rem #333;
+    }
+
     .menu {
         width: 100%;
+        max-height: 0;
+        overflow: hidden;
         padding: 0;
         list-style: none;
     }
+    .menu.active {
+        max-height: 640px;
+    }
+
 
 
 /* Small devices - Smartphones */
 
 
 /* Medium devices - Tablets */
+@media screen and (min-width: 768px) {
+    /* Navigation */
+    nav .btn {
+        display: none;
+    }
+    .menu {
+        display: flex;
+        width: auto;
+        max-height: 640px;
+    }
+}
 
 /* Large Devices -  Laptops */
 
 /* XL Devices -  Desktop */
+@media screen and (min-width: 1200px) {
+    /* Navitation */
+    nav {
+        justify-content: space-around;
+    }
+}
 
 /* XXL Devices - HD-4k TV */

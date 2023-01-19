@@ -10,5 +10,9 @@
   },
   "devDependencies": {
     "vite": "^4.0.0"
+  },
+  "dependencies": {
+    "@fontsource/open-sans": "^4.5.14",
+    "bootstrap": "^5.2.3"
   }
 }
