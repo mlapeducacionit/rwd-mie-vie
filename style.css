@@ -11,12 +11,24 @@
     h3,
     h4,
     header p,
-    .menu {
+    .menu,
+    .container-card {
         margin: 0;
     }
     /* Paddings */
-    .menu {
+    .menu,
+    .container-card {
         padding: 0;
+    }
+
+    .menu,
+    .container-card {
+        list-style: none;
+    }
+    nav a,
+    header a,
+    footer a {
+        text-decoration: none;
     }
     /* Navitation */
 
@@ -32,7 +44,6 @@
     nav a {
         display: block;
         color: #eee;
-        text-decoration: none;
         text-shadow: 0 0 .5rem #333;
     }
 
@@ -54,6 +65,45 @@
     }
     .menu.active {
         max-height: 640px;
+    }
+    /* Cabecera */
+    #header {
+        min-height: min(640px, 100vmin); /* viewport height */
+        display: grid;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        color: #eee;
+        background: #aaa;
+        font-size: min(calc(2vmin + .5rem), 3rem);
+        text-shadow: 0 0 min(2vmin, 3rem) #333;
+    }
+
+    /* Contenido */
+    .container-card {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax( min(100%, 300px), 1fr));
+        flex-wrap: wrap;
+        gap: .5rem;
+        padding: .5rem;
+    }
+    .card {
+        border-radius: .25rem;
+        padding: .5rem 1rem;
+        background-color: #eee;
+        box-shadow: 0 0 .5rem #333;
+    }
+
+    .card img {
+        width: 100%;
+    }
+    .card-title {
+        display: block;
+        margin: -.5rem -1rem 1rem;
+        border-radius: .25rem .25rem 0 0;
+        padding: 1rem;
+        background: #683;
+        font-size: 1.5rem;
     }
 
 

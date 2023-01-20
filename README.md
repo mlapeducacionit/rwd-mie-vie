@@ -89,3 +89,19 @@ Eso me crea un carpeta que subo a mi servidor.
 ## Para subir proyectos front-end
 
 <https://www.netlify.com/>
+
+## Can I USE
+
+<https://caniuse.com/>
+
+## GRID
+
+<https://css-tricks.com/snippets/css/complete-guide-grid/>
+
+## FLEXBOX
+
+<https://css-tricks.com/snippets/css/a-guide-to-flexbox/>
+
+## MDN
+
+<https://developer.mozilla.org/es/>
