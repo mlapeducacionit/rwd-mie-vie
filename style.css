@@ -38,7 +38,8 @@
         align-items: center;
         flex-wrap: wrap;
         padding: .5rem;
-        background: #c63;  
+        background: rgb(131,58,180);
+        background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); 
     }
 
     nav a {
@@ -74,8 +75,14 @@
         align-content: center;
         text-align: center;
         color: #eee;
-        background: #aaa;
-        font-size: min(calc(2vmin + .5rem), 3rem);
+        background: #aaa url('assets/img/osx-sierra.jpg') center/cover;
+        font-size: min(calc(2vw + .5rem), 3rem); /* viewport width */
+
+        /* 
+            min(a, b)
+            a = calc(x + y)
+        */
+
         text-shadow: 0 0 min(2vmin, 3rem) #333;
     }
 
@@ -83,6 +90,13 @@
     .container-card {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax( min(100%, 300px), 1fr));
+
+        /* 
+            repeat(cantidad, tamaño)
+            tamaño = minmax(min, max)
+            min = min(a, b)
+        */
+
         flex-wrap: wrap;
         gap: .5rem;
         padding: .5rem;
@@ -131,6 +145,10 @@
     /* Navitation */
     nav {
         justify-content: space-around;
+    }
+    /* Cabecera */
+    #header {
+        background-image: url('assets/img/ubuntu-focalfossa.jpg');
     }
 }
 
