@@ -34,7 +34,7 @@
     <!-- Contenido -->
 
     <!-- main>section>header.header>h2+p^p+ul>li*3 -->
-    <main>
+    <main class="container">
       <section>
         <header class="header">
           <h2>Tipos de Diseño</h2>
@@ -107,6 +107,60 @@
           </li>
         </ul>
       </section>
+
+      <section>
+        <header class="header">
+          <h2>Bootstrap</h2>
+          <p>Framework CSS</p>
+        </header>
+
+        <p>Conjunto de herramientas desarrolladas por el equipo de twitter implementado sass y es6 (en las últimas versiones), en versiones anteriores teníamos jQuery. Cuya finalidad es facilitar la creación de sitios web responseive, accediendo a los estilos y scripts provistos por los desarrolladores del framework </p>
+        <p>
+          Podemos implementarlo de manera externa en nuestro proyecto a través de la vinculación del <strong>CDN (content distribution network)</strong> o descargar los archivos fuentes, ya sea la <strong>hoja de estilos compliada</strong> o los archivos de procesador.
+        </p>
+        <h3>Estilo de utilidad o ayuda</h3>
+        <p>Una de las caracteristica de Bootstrap radica en sus  <em>helpers o utilitarios</em> que son basicamente clases CSS que se utilizan dentro de la estructra para definir la apariencia básica de los elementos. La estructura de dichas clases suele ser la siguiente <strong>atributo-valor(unidad)</strong> reprentando el atributo con una letra o la palabra completa dependendiendo de que tan general sea este</p>
+
+        <p>A partir de la verisón 4.x como el enfoque de boostrap cambió para compatibilizar los sitios con los diferentes tipos de escritura (originalmente de texto) las clases cuyo valor corresponde a una orientación como izquierda y derecha ya no reciben esos nombre,s sino que pasan a llarmase <strong>start y end</strong></p>
+      </section>
+
+      <!-- https://getbootstrap.com/docs/5.3/utilities/spacing/#margin-and-padding -->
+      <ul class="list-unstyled">
+        <li>
+          <strong>margin</strong>
+          <ul>
+            <li class="m-1">margin: .25rem; .m-1</li>
+            <li class="ms-3">margin-left: 1rem; .ms-3</li> 
+            <li class="mt-2">margin-top: .5rem;</li>
+            <li class="mx-4">margin-right: 1.5rem; margin-left: 1.5rem; .mx-4</li>
+            <li class="mb-5">margin-bottom: 3rem; .mb-5</li>
+            <li class="my-3">margin-top: 1rem; margin-bottom: 1rem; my-3</li>
+          </ul>
+        </li>
+        <li>
+          <strong>padding</strong>
+          <ul>
+            <li class="p-1">padding: .25rem; .p-1</li>
+            <li class="ps-3">padding-left: 1rem; .ps-3</li> 
+            <li class="pt-2">padding-top: .5rem; .pt-2</li>
+            <li class="px-4">padding-right: 1.5rem; padding-left: 1.5rem; .px-4</li>
+            <li class="pb-5">padding-bottom: 3rem; .pb-5</li>
+            <li class="py-3">padding-top: 1rem; padding-bottom: 1rem; py-3</li>
+          </ul>
+        </li>
+        <li>
+          <!-- https://getbootstrap.com/docs/5.3/utilities/borders/#border -->
+          <strong>border</strong>
+          <ul>
+            <li class="border border-3 border-primary">border: 3px solid; .border .border-3 .border-primary</li>
+            <li class="border-start">border-left: 1px solid; .border-start</li> 
+            <li class="border-top border-4">border-top: 4px solid; .border-top .border-4</li>
+            <li class="border rounded">border: 1px solid; border-radius: .25rem; .border .rounded</li>
+            <li class="border border-5 rounded-pill border-opacity-25 border-primary">border: 5px solid; border-radius: 50rem; .border .border-5 .rounded-pill .border-primary</li>
+            <li class="border rounded-circle">border-radius: 50%; .border .rounded-circle</li>
+          </ul>
+        </li>
+      </ul>
 
     </main>
 
