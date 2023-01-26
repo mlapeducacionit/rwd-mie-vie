@@ -162,6 +162,134 @@
         </li>
       </ul>
 
+      <h3>Componentes y sistema de grillas</h3>
+
+      <p>Bootstrap aplica la metodología BEM (Block Element Modifier) para nombrar a las clases que forman parte de su sistema, entre las cuales encontramos a los componentes. Estos son, básicamente, clases que deben implementarse en el HTML de cierta manera para generar diferentes estilos visuales predeterminados, como por ejemplo navegación, galerías, modales, tablas, etc... </p>
+
+      <p>
+        Esta metodología se rige por las siguientes reglas:
+      </p>
+
+      <ul>
+        <li>El contenedor (bloque) define el nombre principal para los demás elementos y así distinguir su jerarquia en los estilos, por ejemplo: .nav y .nav-link</li>
+        <li>los contenidos (elementos) se deben encontrar dentro de su bloque según indica su nombre y deben ser únicos, por ejemplo <button class="btn">.btn</button></li>
+        <li>cada bloque o elementos pueden ser modificados, pero las clases deben ser aplicadas en conjunto por ejemplo: <button class="btn btn-dark">.btn .btn-primary</button></li>
+        <!-- https://getbootstrap.com/docs/5.3/components/buttons/#examples -->
+      </ul>
+      <h4 class="mb-4">Breakpoints</h4>
+      <!-- https://getbootstrap.com/docs/5.3/content/tables/ -->
+      <table class="table table-dark table-striped-columns table-hover">
+        <thead>
+          <tr>
+            <th scope="col">name</th>
+            <th scope="col">screen-width</th>
+            <th scope="col">max-width</th>
+            <th scope="col">devices</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">xs</th>
+            <td> menor igual 576px </td>
+            <td>100%</td>
+            <td>smartwatch</td>
+          </tr>
+          
+          <tr>
+            <th scope="row">sm</th>
+            <td> mayor igual 560px a menor 768px </td>
+            <td>540px</td>
+            <td>smartphones</td>
+          </tr>
+
+          <tr>
+            <th scope="row">md</th>
+            <td> mayor igual 768px a menor 992px </td>
+            <td>720px</td>
+            <td>tablets</td>
+          </tr>
+
+
+          <tr>
+            <th scope="row">lg</th>
+            <td> mayor igual 992px a menor 1200px </td>
+            <td>720px</td>
+            <td>notebook</td>
+          </tr>
+          <tr>
+            <th scope="row">xl</th>
+            <td> mayor igual 1200px a menor 1400px </td>
+            <td>1140px</td>
+            <td>desktop</td>
+          </tr>
+          <tr class="table-danger">
+            <th scope="row">xxl</th>
+            <td> mayor igual 1400px </td>
+            <td>1320px</td>
+            <td>smartTV 4k</td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- https://getbootstrap.com/docs/5.3/layout/breakpoints/#core-concepts -->
+
+      <p>
+        Bootstrap se caracteriza por su sistema de grillas de 12 columnas, el cual consiste en un utilizar un contedor flex y asignar a cada elemento un número de columna correspondiente al tamaño a ocupar.
+      </p>
+
+      <p>
+        El calculo que se realiza par adeterminar el tamaño de cada columna es el siguiente <strong>Nº columna / total columnas</strong> como por ejemplo col-4 ( 4 / 12 ) = 33.33%. Debemos tener en cuenta que la sumatoria de columna no debe superar 12 para que los elementos sigan en la misma fila.
+      </p>
+
+      <div class="row">
+          <div class="col-md-3 bg-primary">col-1</div>
+          <div class="col-md-3 bg-secondary">col-2</div>
+          <div class="col-md-3 bg-dark text-light">col-3</div>
+          <div class="col-md-3 bg-danger">col-4</div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-2 bg-primary">col-1</div>
+        <div class="col-md-2 bg-secondary">col-2</div>
+        <div class="col-md-2 bg-dark text-light">col-3</div>
+        <div class="col-md-2 bg-danger">col-4</div>
+        <div class="col-md-2 bg-danger">col-5</div>
+        <div class="col-md-2 bg-danger">col-6</div>
+      </div>
+
+      <h5> 12 columnas </h5>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-primary">col-1</div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-secondary">col-2</div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-dark text-light">col-3</div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-danger">col-4</div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-success">col-5</div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-warning">col-6</div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-primary">col-7</div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-secondary">col-8</div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-dark text-light">col-9</div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-success">col-10</div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-warning">col-11</div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-danger">col-12</div>
+      </div>
+
+      <hr>
+
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-xxl-6 bg-primary">
+          Column
+        </div>
+        <div class="col-sm-12 col-md-8 col-xxl-2 bg-danger">
+          Column
+        </div>
+        <div class="col-sm-12 col-md-4 col-xxl-4 bg-warning">
+          Column
+        </div>
+      </div>
+
+      <p>
+        Si necesitamos que el tamao de un elemento o cualquier otro atributo cambie según el breakpoint simplente a las reglas mencionadas anteriorente interpolaremos el nombre de la pantalla cuestión, es decir que en lugar de usar <strong>col-4</strong> podemos utilizar <strong>col-lg-4</strong> para que dicho estilo se aplique a partir del tamaño correspondiente 
+      </p>
+
     </main>
 
     <!-- Pie de página -->

@@ -1,10 +1,11 @@
 /* Estilos */
-
-import './style.css'
+// Librería Bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css'
-
+// Fuentes
 import "@fontsource/open-sans/300.css";
 import "@fontsource/open-sans/700.css";
+// Estilos propios
+import './style.css'
 
 /* Scripts */
 
